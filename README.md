@@ -33,14 +33,46 @@ I'm exploring four areas at the moment:
 
 ## Current Focus
 
-| Area | What I'm working on |
-| :--- | :--- |
-| **Java & Backend** | Strengthening Java fundamentals, learning Spring Boot |
-| **Linux & Shell** | Bash/shell scripting, SSH, server administration basics |
-| **Cloud & DevOps** | AWS basics and EC2, Nginx, DevOps fundamentals |
-| **Git & GitHub** | Version control workflows and GitHub usage |
-| **Data Analytics** | SQL, analytics concepts, Python with NumPy and Pandas |
-| **Frontend** | Building layouts with HTML, CSS and Tailwind CSS |
+## Current Focus
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,spring&theme=dark" alt="Java and Spring Boot">
+
+**Java & Backend**
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=linux,bash,ssh&theme=dark" alt="Linux and Shell">
+
+**Linux & Shell**
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=aws,nginx,docker&theme=dark" alt="Cloud and DevOps">
+
+**Cloud & DevOps**
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=git,github&theme=dark" alt="Git and GitHub">
+
+**Git & GitHub**
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=python,numpy,pandas,postgres&theme=dark" alt="Data Analytics">
+
+**Data Analytics**
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=html,css,tailwind&theme=dark" alt="Frontend">
+
+**Frontend**
+
+</div>
+
 
 ---
 

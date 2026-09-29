@@ -33,45 +33,32 @@ I'm exploring four areas at the moment:
 
 ## Current Focus
 
-## Current Focus
-
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=java,spring&theme=dark" alt="Java and Spring Boot">
-
-**Java & Backend**
+<a href="#"><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"></a> <a href="#"><img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot"></a>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=linux,bash,ssh&theme=dark" alt="Linux and Shell">
-
-**Linux & Shell**
+<a href="#"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></a> <a href="#"><img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash"></a> <a href="#"><img src="https://img.shields.io/badge/SSH-222222?style=for-the-badge&logo=linux&logoColor=white" alt="SSH"></a>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=aws,nginx,docker&theme=dark" alt="Cloud and DevOps">
-
-**Cloud & DevOps**
+<a href="#"><img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"></a> <a href="#"><img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx"></a>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=git,github&theme=dark" alt="Git and GitHub">
-
-**Git & GitHub**
+<a href="#"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"></a> <a href="#"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=python,numpy,pandas,postgres&theme=dark" alt="Data Analytics">
-
-**Data Analytics**
+<a href="#"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a> <a href="#"><img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"></a> <a href="#"><img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"></a> <a href="#"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"></a>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=html,css,tailwind&theme=dark" alt="Frontend">
-
-**Frontend**
+<a href="#"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"></a> <a href="#"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></a> <a href="#"><img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"></a>
 
 </div>
+
 
 
 ---

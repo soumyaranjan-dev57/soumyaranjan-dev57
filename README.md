@@ -1,27 +1,117 @@
-# 💫 About Me:
+<div align="center">
 
-Hi, I’m Soumya Ranjan Barik 👋<br><br>💻 Aspiring Software Engineer | Computer Science Graduate<br><br>🚀 Exploring Software Development, DevOps, Data Analytics & Frontend Development<br><br>🛠️ Building practical projects and strengthening my technical skills<br><br>📚 Always learning, experimenting, and improving
+# Soumya Ranjan Barik
 
-## 🌐 Socials:
+### Aspiring Software Engineer &nbsp;|&nbsp; Computer Science Graduate
 
-[![email](https://img.shields.io/badge/Email-D14836?logo=gmail\&logoColor=white)](mailto:bariksoumyaranjan5712@gmail.com)
+<p>
+Building practical skills in software development, DevOps, data analytics and frontend development.
+</p>
 
-# 💻 Tech Stack:
+<p>
+  <a href="https://github.com/soumyaranjan-dev57"><img src="https://img.shields.io/badge/GitHub-soumyaranjan--dev57-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:bariksoumyaranjan5712@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-3B82F6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge\&logo=c\&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge\&logo=c%2B%2B\&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge\&logo=css3\&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge\&logo=html5\&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge\&logo=openjdk\&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge\&logo=javascript\&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge\&logo=python\&logoColor=ffdd54) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge\&logo=powershell\&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge\&logo=windows-terminal\&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge\&logo=amazon-aws\&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge\&logo=nginx\&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge\&logo=numpy\&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge\&logo=pandas\&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge\&logo=git\&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge\&logo=github\&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge\&logo=jira\&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge\&logo=kubernetes\&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge\&logo=docker\&logoColor=white) ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge\&logo=powerbi\&logoColor=black) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge\&logo=mysql\&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge\&logo=postgresql\&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge\&logo=jenkins\&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge\&logo=fastapi)
-
-# 📊 GitHub Stats:
-
-![](https://github-readme-stats.shion.dev/api?username=soumyaranjan-dev57\&theme=tokyonight\&hide_border=false\&include_all_commits=false\&count_private=true)<br/>
-![](https://streak-stats.demolab.com/?user=soumyaranjan-dev57\&theme=tokyonight\&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=soumyaranjan-dev57\&theme=tokyonight\&hide_border=false\&include_all_commits=false\&count_private=true\&layout=compact)
-
-# 🐍 Snake Game:
-
-![Snake animation](https://raw.githubusercontent.com/soumyaranjan-dev57/soumyaranjan-dev57/output/github-contribution-grid-snake.svg)
+</div>
 
 ---
 
-[![](https://komarev.com/ghpvc/?username=soumyaranjan-dev57\&icon=0\&color=0)](https://visitcount.itsvg.in)
+## About
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+I'm a Computer Science graduate working toward a career in software engineering. I'm currently learning by practising: writing code, working on Linux servers, using Git daily, and getting comfortable with cloud and data tools.
+
+I'm exploring four areas at the moment:
+
+- **Software Development**: Java and backend fundamentals
+- **DevOps**: Linux, servers, AWS and automation basics
+- **Data Analytics**: Python, SQL and reporting
+- **Frontend Development**: HTML, CSS, JavaScript and Tailwind CSS
+
+---
+
+## Current Focus
+
+| Area | What I'm working on |
+| :--- | :--- |
+| **Java & Backend** | Strengthening Java fundamentals, learning Spring Boot |
+| **Linux & Shell** | Bash/shell scripting, SSH, server administration basics |
+| **Cloud & DevOps** | AWS basics and EC2, Nginx, DevOps fundamentals |
+| **Git & GitHub** | Version control workflows and GitHub usage |
+| **Data Analytics** | SQL, analytics concepts, Python with NumPy and Pandas |
+| **Frontend** | Building layouts with HTML, CSS and Tailwind CSS |
+
+---
+
+## Tech Stack
+
+**Languages**
+
+<img src="https://skillicons.dev/icons?i=c,cpp,java,js,py&theme=dark" alt="Languages">
+
+**Frontend**
+
+<img src="https://skillicons.dev/icons?i=html,css,js,tailwind&theme=dark" alt="Frontend">
+
+**Backend / Development**
+
+<img src="https://skillicons.dev/icons?i=java,spring,fastapi&theme=dark" alt="Backend"> 
+<br><sub>Spring Boot: currently learning</sub>
+
+**Data & Databases**
+
+<img src="https://skillicons.dev/icons?i=py,numpy,pandas,mysql,postgres,powerbi&theme=dark" alt="Data and Databases">
+
+**DevOps & Cloud**
+
+<img src="https://skillicons.dev/icons?i=linux,bash,aws,docker,kubernetes,jenkins,nginx,powershell&theme=dark" alt="DevOps and Cloud">
+
+**Tools**
+
+<img src="https://skillicons.dev/icons?i=git,github,jira&theme=dark" alt="Tools">
+
+---
+
+## GitHub Activity
+
+<div align="center">
+
+<img height="170" src="https://streak-stats.demolab.com?user=soumyaranjan-dev57&theme=github-dark&hide_border=true&background=0D1117&ring=3B82F6&fire=3B82F6&currStreakLabel=3B82F6" alt="GitHub streak">
+
+<br>
+
+<img height="170" src="https://github-readme-stats.shion.dev/api?username=soumyaranjan-dev57&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=3B82F6&hide_title=false" alt="GitHub stats">
+<img height="170" src="https://github-readme-stats.shion.dev/api/top-langs/?username=soumyaranjan-dev57&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=3B82F6" alt="Top languages">
+
+</div>
+
+---
+
+## Contribution Graph
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/soumyaranjan-dev57/soumyaranjan-dev57/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/soumyaranjan-dev57/soumyaranjan-dev57/output/github-contribution-grid-snake.svg">
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/soumyaranjan-dev57/soumyaranjan-dev57/output/github-contribution-grid-snake-dark.svg">
+  </picture>
+</div>
+
+---
+
+## Connect
+
+I'm open to entry-level opportunities, internships and conversations with other developers.
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:bariksoumyaranjan5712@gmail.com"><img src="https://img.shields.io/badge/Email-3B82F6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://github.com/soumyaranjan-dev57"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+
+<br><br>
+
+<sub>Learning in public, one commit at a time.</sub>
+
+</div>

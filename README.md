@@ -41,6 +41,18 @@
 
 <div align="center">
 
+
+<p align="center">
+  <a href="https://soumyaranjan-dev57.github.io/">
+    <img src="https://raw.githubusercontent.com/soumyaranjan-dev57/soumyaranjan-dev57/main/preview.svg" width="100%" alt="NEON SERPENT — Cyberpunk Snake Game">
+  </a>
+  <br>
+  <a href="https://soumyaranjan-dev57.github.io/">
+    <strong>▶ PLAY NEON SERPENT</strong>
+  </a>
+</p>
+
+
 <br>
 
 <img src="footer.svg" width="100%" alt="$ echo &quot;keep learning. keep building.&quot;">

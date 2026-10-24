@@ -43,11 +43,11 @@
 
 
 <p align="center">
-  <a href="https://soumyaranjan-dev57.github.io/">
+  <a href="https://soumyaranjan-dev57.github.io/soumyaranjan-dev57/">
     <img src="https://raw.githubusercontent.com/soumyaranjan-dev57/soumyaranjan-dev57/main/preview.svg" width="100%" alt="NEON SERPENT — Cyberpunk Snake Game">
   </a>
   <br>
-  <a href="[https://soumyaranjan-dev57.github.io/](https://soumyaranjan-dev57.github.io/soumyaranjan-dev57/)">
+  <a href="https://soumyaranjan-dev57.github.io/soumyaranjan-dev57/">
     <strong>▶ PLAY NEON SERPENT</strong>
   </a>
 </p>

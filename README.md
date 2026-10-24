@@ -5,10 +5,18 @@
 <br>
 
 <div align="center">
-  <a href="https://github.com/soumyaranjan-dev57"><b>⚡ [ GITHUB ]</b></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/soumyarani-barik-575b65363/"><b>🌐 [ LINKEDIN ]</b></a>
+
+  <a href="https://github.com/soumyaranjan-dev57">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/soumyarani-barik-575b65363/">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile">
+  </a>
+
 </div>
+
+
 
 <img src="divider.svg" width="100%" alt="">
 
@@ -21,18 +29,29 @@
   <img src="divider.svg" width="100%" alt="">
 </div>
 
+
 ## `02` // SKILL MATRIX
 
-● **hands-on practice** &nbsp;·&nbsp; ○ **learning / exploring**
+<div align="center">
 
-| Area | Skills |
+<img src="https://img.shields.io/badge/HANDS--ON-42FF9E?style=flat-square" alt="Hands-on practice">
+&nbsp;
+<img src="https://img.shields.io/badge/LEARNING-00F5FF?style=flat-square" alt="Currently learning">
+
+</div>
+
+| AREA | SKILLS |
 |:--|:--|
-| **Programming** | ● `Python` ● `Bash` |
-| **DevOps & Cloud** | ● `Linux` ● `Git` ● `Docker` ● `Docker Compose` ● `Jenkins` ○ `AWS` ○ `CI/CD` ○ `Terraform` ○ `Kubernetes` |
-| **Development & Databases** | ● `Flask` ● `MySQL` |
-| **AI** | ○ `ML foundations` ○ `LLMs` ○ `Generative AI` ○ `RAG` ○ `Agentic AI` |
+| **Programming** | `Python` · `Bash` |
+| **DevOps & Cloud** | `Linux` · `Git` · `Docker` · `Docker Compose` · `Jenkins` |
+| **Cloud & Automation — Learning** | `AWS` · `CI/CD` · `Terraform` · `Kubernetes` |
+| **Development & Databases** | `Flask` · `MySQL` |
+| **AI — Exploring** | `ML Foundations` · `LLMs` · `Generative AI` · `RAG` · `Agentic AI` |
 
-<sub>Hands-on means learned and used through projects and labs. It does not mean professional production experience or certification.</sub>
+<div align="center">
+  <sub>Hands-on skills have been practised through projects or labs. Learning and exploring topics are not claimed as completed or professional experience.</sub>
+</div>
+
 
 <div align="center">
 <img src="divider.svg" width="100%" alt="">

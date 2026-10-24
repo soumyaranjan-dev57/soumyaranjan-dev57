@@ -39,35 +39,13 @@
 <img src="divider.svg" width="100%" alt="">
 </div>
 
-## `03` // PROJECTS
-
-### flask-mysql-docker-compose
-
-`PRACTICE PROJECT` · Python · Flask · MySQL · Docker Compose
-
-A Flask app and a MySQL database running as separate containers with Docker Compose.
-
-* Flask and MySQL 8.4, served with Gunicorn
-* Docker network, health checks and a named volume for persistent data
-* Credentials kept in environment variables; app runs as a non-root user
-
-**[→ Open repository](https://github.com/soumyaranjan-dev57/flask-mysql-docker-compose)**
-
-### two-tier-flask-app
-
-`PRACTICE FORK` · Flask · MySQL · Docker · Jenkins
-
-A fork of an open-source two-tier Flask + MySQL demo, used for hands-on Docker and Jenkins practice.
-
-* Containerized Flask and MySQL app run with Docker Compose
-* Includes a `Jenkinsfile`, used to practice pipeline stages and Docker image builds
-* Forked from [LondheShubham153/two-tier-flask-app](https://github.com/LondheShubham153/two-tier-flask-app); credit for the original app goes to its author
-
-**[→ Open repository](https://github.com/soumyaranjan-dev57/two-tier-flask-app)**
 
 <div align="center">
-<img src="divider.svg" width="100%" alt="">
+  <img src="projects.svg" width="100%" alt="Projects — Neon portfolio panel">
 </div>
+
+[**→ Open repository**](https://github.com/soumyaranjan-dev57/two-tier-flask-app)
+
 
 ## `04` // CONNECT
 

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON SERPENT // 3D ARCADE</title>
+<style>
+:root{--cyan:#00f5ff;--violet:#b45cff;--pink:#ff39d4;--green:#42ffb0;--bg:#050816}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#18224b 0%,#080c20 42%,#03040b 100%);color:#eaf8ff;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;display:flex;justify-content:center;align-items:center;padding:22px;overflow-x:hidden}
+.shell{width:min(1100px,100%);border:1px solid #286b9a;border-radius:22px;background:linear-gradient(145deg,rgba(8,19,43,.96),rgba(22,9,43,.95));box-shadow:0 0 34px #00d9ff1c,inset 0 0 40px #5d38a015;overflow:hidden;position:relative}
+.shell:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 20%,#00f5ff09 48%,transparent 68%);animation:sweep 8s linear infinite}
+@keyframes sweep{from{transform:translateX(-70%)}to{transform:translateX(70%)}}
+header{padding:22px 26px 16px;border-bottom:1px solid #224d76;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;position:relative}
+.eyebrow{font-size:11px;letter-spacing:3px;color:var(--cyan);margin-bottom:7px}
+h1{margin:0;font-size:clamp(23px,4vw,38px);letter-spacing:1px;background:linear-gradient(90deg,#fff,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 28px #00f5ff22}
+.tag{color:#9db6d6;font-size:11px;letter-spacing:1.4px}
+.stats{display:flex;gap:10px}
+.stat{border:1px solid #294e7d;background:#07152b;border-radius:12px;padding:10px 15px;min-width:95px}
+.stat span{display:block;color:#8aa9cb;font-size:10px;letter-spacing:1.4px;margin-bottom:5px}
+.stat strong{font-size:22px;color:var(--cyan);text-shadow:0 0 14px #00f5ff70}
+main{padding:20px 22px 24px;position:relative}
+.stage{position:relative;border:1px solid #22628b;border-radius:16px;overflow:hidden;background:#050a1a;box-shadow:inset 0 0 40px #00eaff0b,0 0 22px #00f5ff10}
+canvas{display:block;width:100%;height:auto;aspect-ratio:16/10;touch-action:none}
+.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#03071955,#030719b8);text-align:center;padding:22px}
+.overlay.hidden{display:none}
+.panel{max-width:460px;border:1px solid #28739d;border-radius:18px;padding:25px 28px;background:#071329eF;box-shadow:0 0 32px #00f5ff22}
+.panel h2{font-size:clamp(21px,4vw,30px);margin:0 0 10px;color:#fff}
+.panel p{color:#a8c0df;font:13px/1.7 Arial,sans-serif;margin:0 0 18px}
+button{font:inherit;cursor:pointer;border:1px solid #00dff5;color:#04101b;background:linear-gradient(100deg,var(--cyan),#74caff);padding:12px 20px;border-radius:10px;font-weight:900;letter-spacing:1px;box-shadow:0 0 20px #00f5ff30;transition:transform .15s,filter .15s}
+button:hover{transform:translateY(-2px);filter:brightness(1.12)}
+button.secondary{background:#0a1931;color:#ccefff;border-color:#425d8e;box-shadow:none}
+.controls{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:16px}
+.hints{color:#91a9cb;font-size:11px;line-height:1.9}
+.hints b{color:#d8f9ff}
+.actions{display:flex;gap:9px;flex-wrap:wrap}
+.mobilepad{display:none;grid-template-columns:repeat(3,48px);grid-template-rows:repeat(2,42px);gap:5px;justify-content:center;margin:17px auto 0}
+.mobilepad button{padding:0;font-size:17px}
+.mobilepad button:nth-child(1){grid-column:2;grid-row:1}
+.mobilepad button:nth-child(2){grid-column:1;grid-row:2}
+.mobilepad button:nth-child(3){grid-column:2;grid-row:2}
+.mobilepad button:nth-child(4){grid-column:3;grid-row:2}
+footer{border-top:1px solid #1c3d61;padding:13px 22px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#708db3;font-size:10px;letter-spacing:1px}
+.live{color:var(--green)}
+@media(max-width:650px){body{padding:9px}.shell{border-radius:15px}header{padding:17px}.stats{width:100%}.stat{flex:1;min-width:0}main{padding:12px}.controls{justify-content:center}.hints{text-align:center}.mobilepad{display:grid}footer{justify-content:center;text-align:center}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div>
+      <div class="eyebrow">SRB // ARCADE SYSTEM 03</div>
+      <h1>NEON SERPENT</h1>
+      <div class="tag">3D-STYLE SNAKE ARCADE · CYBER GRID EDITION</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><span>SCORE</span><strong id="score">000</strong></div>
+      <div class="stat"><span>HIGH SCORE</span><strong id="high">000</strong></div>
+      <div class="stat"><span>LEVEL</span><strong id="level">01</strong></div>
+    </div>
+  </header>
+  <main>
+    <div class="stage">
+      <canvas id="game" width="960" height="600" aria-label="Neon Serpent game arena"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <div class="eyebrow">INSERT COIN // JUST KIDDING</div>
+          <h2 id="overlayTitle">ENTER THE GRID</h2>
+          <p id="overlayText">Collect neon energy orbs, grow your serpent, and chase a new high score. Avoid your own trail and the arena walls.</p>
+          <button id="startBtn">START GAME ▶</button>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="hints"><b>MOVE</b> WASD / ARROW KEYS &nbsp; · &nbsp; <b>PAUSE</b> SPACE / P<br><b>GOAL</b> Collect the glowing orbs. Don't hit the walls or yourself.</div>
+      <div class="actions"><button class="secondary" id="pauseBtn">Ⅱ PAUSE</button><button class="secondary" id="restartBtn">↻ RESTART</button></div>
+    </div>
+    <div class="mobilepad" aria-label="Touch controls">
+      <button class="secondary" data-dir="up" aria-label="Up">▲</button>
+      <button class="secondary" data-dir="left" aria-label="Left">◀</button>
+      <button class="secondary" data-dir="down" aria-label="Down">▼</button>
+      <button class="secondary" data-dir="right" aria-label="Right">▶</button>
+    </div>
+  </main>
+  <footer><span><span class="live">● SYSTEM ONLINE</span> // NEON GRID ACTIVE</span><span>BUILT TO PLAY · DESIGNED TO GLOW</span></footer>
+</div>
+<script>
+(() => {
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+const $ = id => document.getElementById(id);
+const W = canvas.width, H = canvas.height;
+const cols = 24, rows = 15;
+let snake, dir, nextDir, food, particles, score, high, level, running, paused, ended, lastStep, accumulator, lastTime, stars;
+const cellW = W / cols, cellH = H / rows;
+try { high = Number(localStorage.getItem('neonSerpentHigh') || 0); } catch { high = 0; }
+function fmt(n){return String(n).padStart(3,'0')}
+function updateStats(){ $('score').textContent=fmt(score); $('high').textContent=fmt(high); $('level').textContent=String(level).padStart(2,'0'); }
+function reset(){
+  snake=[{x:7,y:7},{x:6,y:7},{x:5,y:7},{x:4,y:7}];
+  dir={x:1,y:0}; nextDir={x:1,y:0}; score=0; level=1; particles=[];
+  running=false; paused=false; ended=false; accumulator=0; lastStep=0;
+  spawnFood(); updateStats(); showOverlay('ENTER THE GRID','Collect neon energy orbs, grow your serpent, and chase a new high score. Avoid your own trail and the arena walls.','START GAME ▶');
+  draw(0);
+}
+function showOverlay(title,text,button){$('overlayTitle').textContent=title;$('overlayText').textContent=text;$('startBtn').textContent=button;$('overlay').classList.remove('hidden')}
+function hideOverlay(){$('overlay').classList.add('hidden')}
+function start(){if(ended) reset();running=true;paused=false;ended=false;hideOverlay();lastTime=performance.now();requestAnimationFrame(loop)}
+function spawnFood(){
+  let p,tries=0;
+  do {p={x:Math.floor(Math.random()*cols),y:Math.floor(Math.random()*rows)};tries++}
+  while(snake && snake.some(s=>s.x===p.x&&s.y===p.y) && tries<1000);
+  food=p;
+}
+function setDir(name){
+  const map={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};
+  const d=map[name]; if(!d)return;
+  if(d.x===-dir.x&&d.y===-dir.y)return;
+  nextDir=d;
+}
+function burst(x,y,color){
+  for(let i=0;i<18;i++){const a=Math.random()*Math.PI*2,sp=30+Math.random()*150;particles.push({x:(x+.5)*cellW,y:(y+.5)*cellH,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:.45+Math.random()*.55,max:.9,color,size:2+Math.random()*4})}
+}
+function step(){
+  dir=nextDir;
+  const head={x:snake[0].x+dir.x,y:snake[0].y+dir.y};
+  if(head.x<0||head.x>=cols||head.y<0||head.y>=rows||snake.some((s,i)=>i<snake.length-1&&s.x===head.x&&s.y===head.y)){
+    running=false;ended=true;showOverlay('SYSTEM CRASHED',`Final score: ${score}. Your serpent hit the grid. Run it back and beat your high score.`,`PLAY AGAIN ↻`);return;
+  }
+  snake.unshift(head);
+  if(head.x===food.x&&head.y===food.y){
+    score+=10;level=1+Math.floor(score/50);burst(food.x,food.y,'#00f5ff');spawnFood();
+    if(score>high){high=score;try{localStorage.setItem('neonSerpentHigh',String(high))}catch{}}
+    updateStats();
+  } else snake.pop();
+}
+function roundedRect(x,y,w,h,r){
+  ctx.beginPath();ctx.roundRect(x,y,w,h,r);
+}
+function drawGrid(t){
+  ctx.clearRect(0,0,W,H);
+  const bg=ctx.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#071226');bg.addColorStop(.6,'#080d25');bg.addColorStop(1,'#190d31');ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  // Horizon glow and perspective grid
+  const glow=ctx.createRadialGradient(W*.5,H*.24,10,W*.5,H*.24,H*.85);glow.addColorStop(0,'#173b76aa');glow.addColorStop(1,'#03071500');ctx.fillStyle=glow;ctx.fillRect(0,0,W,H);
+  ctx.save();ctx.strokeStyle='#1a78a8';ctx.lineWidth=1;ctx.globalAlpha=.34;
+  const horizon=H*.17;
+  for(let i=-14;i<=14;i++){ctx.beginPath();ctx.moveTo(W/2+i*8,horizon);ctx.lineTo(W/2+i*52,H);ctx.stroke()}
+  const offset=(t*.055)%40;
+  for(let i=0;i<16;i++){let p=(i/16);let y=horizon+(H-horizon)*p*p; y=(y+offset)%H;if(y<horizon)y+=horizon;ctx.globalAlpha=.12+p*.25;ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke()}
+  ctx.restore();
+  // Game board grid
+  ctx.save();ctx.strokeStyle='#1d3d70';ctx.lineWidth=1;ctx.globalAlpha=.55;
+  for(let x=0;x<=W;x+=cellW){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke()}
+  for(let y=0;y<=H;y+=cellH){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke()}
+  ctx.restore();
+  // Board rim
+  ctx.shadowBlur=18;ctx.shadowColor='#00d9ff';ctx.strokeStyle='#00cfff';ctx.globalAlpha=.75;ctx.lineWidth=2;ctx.strokeRect(1,1,W-2,H-2);ctx.shadowBlur=0;ctx.globalAlpha=1;
+}
+function drawFood(t){
+  const x=(food.x+.5)*cellW,y=(food.y+.5)*cellH;
+  const pulse=1+Math.sin(t*.006)*.16;
+  ctx.save();ctx.translate(x,y);ctx.rotate(t*.0015);ctx.shadowColor='#ff39d4';ctx.shadowBlur=25;
+  ctx.strokeStyle='#ff39d4';ctx.lineWidth=2;ctx.beginPath();ctx.arc(0,0,10*pulse,0,Math.PI*2);ctx.stroke();
+  ctx.shadowColor='#00f5ff';ctx.shadowBlur=25;ctx.fillStyle='#eaffff';ctx.beginPath();ctx.moveTo(0,-8*pulse);ctx.lineTo(7*pulse,0);ctx.lineTo(0,8*pulse);ctx.lineTo(-7*pulse,0);ctx.closePath();ctx.fill();
+  ctx.restore();
+}
+function drawSnake(t){
+  // Tail segments first, with dimensional offset and glowing edge
+  for(let i=snake.length-1;i>=0;i--){
+    const s=snake[i],x=s.x*cellW,y=s.y*cellH;
+    const pad=3+(i===0?0:1);
+    const grad=ctx.createLinearGradient(x,y,x+cellW,y+cellH);
+    const hue=(180+i*2.4+t*.018)%360;
+    grad.addColorStop(0, i===0?'#f4ffff':`hsl(${hue},100%,68%)`);
+    grad.addColorStop(.48, i===0?'#00f5ff':'#00c7ef');
+    grad.addColorStop(1,'#4d36c9');
+    ctx.save();
+    ctx.shadowColor=i===0?'#00f5ff':'#376dff';ctx.shadowBlur=i===0?26:13;
+    roundedRect(x+pad,y+pad,cellW-pad*2,cellH-pad*2,6);
+    ctx.fillStyle=grad;ctx.fill();
+    ctx.shadowBlur=0;
+    // 3D highlight and dark lower bevel
+    ctx.strokeStyle='#b9ffff';ctx.globalAlpha=i===0?.9:.34;ctx.lineWidth=1.4;
+    ctx.beginPath();ctx.moveTo(x+pad+4,y+pad+2);ctx.lineTo(x+cellW-pad-4,y+pad+2);ctx.stroke();
+    ctx.globalAlpha=.65;ctx.strokeStyle='#030820';ctx.lineWidth=2;
+    ctx.beginPath();ctx.moveTo(x+pad+3,y+cellH-pad-2);ctx.lineTo(x+cellW-pad-3,y+cellH-pad-2);ctx.stroke();
+    if(i===0){
+      ctx.globalAlpha=1;ctx.fillStyle='#071226';
+      const cx=x+cellW/2,cy=y+cellH/2;
+      const eye1={x:cx+dir.x*4-dir.y*5,y:cy+dir.y*4+dir.x*5};
+      const eye2={x:cx+dir.x*4+dir.y*5,y:cy+dir.y*4-dir.x*5};
+      ctx.shadowColor='#fff';ctx.shadowBlur=8;ctx.fillStyle='#fff';
+      ctx.beginPath();ctx.arc(eye1.x,eye1.y,2.2,0,Math.PI*2);ctx.arc(eye2.x,eye2.y,2.2,0,Math.PI*2);ctx.fill();
+    }
+    ctx.restore();
+  }
+}
+function drawParticles(dt){
+  particles=particles.filter(p=>p.life>0);
+  for(const p of particles){p.x+=p.vx*dt;p.y+=p.vy*dt;p.vx*=.97;p.vy*=.97;p.life-=dt;ctx.save();ctx.globalAlpha=Math.max(0,p.life/p.max);ctx.fillStyle=p.color;ctx.shadowColor=p.color;ctx.shadowBlur=12;ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fill();ctx.restore()}
+}
+function draw(t,dt=0){drawGrid(t);drawFood(t);drawSnake(t);drawParticles(dt);}
+// floating dust
+function loop(now){
+  if(!running)return;
+  const dt=Math.min((now-lastTime)/1000,.05);lastTime=now;accumulator+=dt;
+  const interval=Math.max(.065,.145-(level-1)*.009);
+  while(accumulator>=interval&&running){step();accumulator-=interval}
+  draw(now,dt);
+  if(running)requestAnimationFrame(loop);
+}
+document.addEventListener('keydown',e=>{
+  const k=e.key.toLowerCase();
+  const map={arrowup:'up',w:'up',arrowdown:'down',s:'down',arrowleft:'left',a:'left',arrowright:'right',d:'right'};
+  if(map[k]){e.preventDefault();setDir(map[k]);if(!running&&!paused&&!ended)start()}
+  if(k===' '||k==='p'){e.preventDefault();togglePause()}
+  if(k==='enter'&&!running)start();
+});
+document.querySelectorAll('[data-dir]').forEach(b=>{
+  b.addEventListener('click',()=>{setDir(b.dataset.dir);if(!running&&!paused&&!ended)start()});
+  b.addEventListener('touchstart',e=>{e.preventDefault();setDir(b.dataset.dir);if(!running&&!paused&&!ended)start()},{passive:false});
+});
+function togglePause(){
+  if(ended)return;
+  if(!running&&!paused)return;
+  if(paused){paused=false;running=true;lastTime=performance.now();hideOverlay();requestAnimationFrame(loop)}
+  else{running=false;paused=true;showOverlay('PAUSED','Take a breather. The neon grid is waiting for you.','RESUME ▶')}
+}
+$('startBtn').addEventListener('click',()=>{if(paused){paused=false;running=true;hideOverlay();lastTime=performance.now();requestAnimationFrame(loop)}else start()});
+$('pauseBtn').addEventListener('click',togglePause);
+$('restartBtn').addEventListener('click',()=>{reset();start()});
+let touchStart=null;
+canvas.addEventListener('touchstart',e=>{const t=e.touches[0];touchStart={x:t.clientX,y:t.clientY}},{passive:true});
+canvas.addEventListener('touchend',e=>{if(!touchStart)return;const t=e.changedTouches[0],dx=t.clientX-touchStart.x,dy=t.clientY-touchStart.y;if(Math.max(Math.abs(dx),Math.abs(dy))>24)setDir(Math.abs(dx)>Math.abs(dy)?(dx>0?'right':'left'):(dy>0?'down':'up'));touchStart=null},{passive:true});
+reset();
+})();
+</script>
+</body>
+</html>

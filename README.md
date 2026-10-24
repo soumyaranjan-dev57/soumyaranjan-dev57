@@ -59,6 +59,21 @@
 </div>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Python-0B1020?style=for-the-badge&logo=python&logoColor=00F5FF" />
+  <img src="https://img.shields.io/badge/Linux-0B1020?style=for-the-badge&logo=linux&logoColor=00F5FF" />
+  <img src="https://img.shields.io/badge/Git-0B1020?style=for-the-badge&logo=git&logoColor=FF3CAC" />
+  <img src="https://img.shields.io/badge/Bash-0B1020?style=for-the-badge&logo=gnubash&logoColor=00F5FF" />
+  <img src="https://img.shields.io/badge/Docker-0B1020?style=for-the-badge&logo=docker&logoColor=00F5FF" />
+  <img src="https://img.shields.io/badge/Jenkins-0B1020?style=for-the-badge&logo=jenkins&logoColor=FF3CAC" />
+  <img src="https://img.shields.io/badge/Flask-0B1020?style=for-the-badge&logo=flask&logoColor=FFFFFF" />
+  <img src="https://img.shields.io/badge/MySQL-0B1020?style=for-the-badge&logo=mysql&logoColor=00F5FF" />
+</p>
+
+<div align="center">
+<img src="divider.svg" width="100%" alt="">
+</div>
+
+<p align="center">
   <a href="https://soumyaranjan-dev57.github.io/soumyaranjan-dev57/">
     <img src="https://raw.githubusercontent.com/soumyaranjan-dev57/soumyaranjan-dev57/main/preview.svg" width="100%" alt="NEON SERPENT — Cyberpunk Snake Game">
   </a>

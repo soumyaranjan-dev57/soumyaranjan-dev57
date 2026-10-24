@@ -35,6 +35,25 @@
 <img src="divider.svg" width="100%" alt="">
 </div>
 
+<p align="center">
+  <img src="./cyberpunk-dashboard.svg" width="100%" alt="Animated cyberpunk activity dashboard">
+</p>
+
+<p align="center">
+  <img height="175" src="https://github-readme-stats.vercel.app/api?username=soumyaranjan-dev57&show_icons=true&hide_border=true&bg_color=0B1020&title_color=00F5FF&text_color=E5E7EB&icon_color=A855F7&ring_color=FF3CAC" alt="GitHub stats">
+  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=soumyaranjan-dev57&layout=compact&hide_border=true&bg_color=0B1020&title_color=00F5FF&text_color=E5E7EB" alt="Top languages">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=soumyaranjan-dev57&bg_color=0B1020&color=00F5FF&line=A855F7&point=FF3CAC&area=true&hide_border=true" width="100%" 
+</p>
+
+
+<div align="center">
+<img src="divider.svg" width="100%" alt="">
+</div>
+
+
 <div align="center">
   <img src="connect.svg" width="100%" alt="Connect with Soumya Ranjan Barik">
 </div>

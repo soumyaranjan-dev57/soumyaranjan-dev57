@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" width="1000" height="120" role="img" aria-label="keep learning. keep building.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#080c24"/><stop offset="1" stop-color="#03050f"/></linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="0.55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ff2bd6"/></linearGradient>
+    <radialGradient id="g1" cx="0.12" cy="0.05" r="0.65"><stop offset="0" stop-color="#8b5cf6" stop-opacity="0.38"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="0.92" cy="1" r="0.65"><stop offset="0" stop-color="#00e5ff" stop-opacity="0.22"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#00e5ff" stroke-opacity="0.07" stroke-width="1"/><animateTransform attributeName="patternTransform" type="translate" from="0 0" to="0 40" dur="4s" repeatCount="indefinite"/></pattern>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="120" rx="16" fill="url(#bg)"/>
+  <rect width="1000" height="120" rx="16" fill="url(#grid)"/>
+  <rect width="1000" height="120" rx="16" fill="url(#g1)"/>
+  <rect x="1" y="1" width="998" height="118" rx="15" fill="none" stroke="url(#neon)" stroke-opacity="0.55" stroke-width="2"/>
+  <clipPath id="ft"><rect x="226.4" y="28" height="46" width="550.2"><animate attributeName="width" values="0;550.2;550.2;0" keyTimes="0;0.3;0.9;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#ft)" font-size="24" font-family="'Courier New',Consolas,Menlo,monospace">
+    <text x="226.4" y="62" fill="#ff2bd6">$</text>
+    <text x="255.2" y="62" fill="#00e5ff">echo</text>
+    <text x="327.2" y="62" fill="#b69cff">"keep learning. keep building."</text>
+  </g>
+  <rect x="776.6" y="40" width="3" height="26" fill="#00e5ff" filter="url(#glow)"><animate attributeName="x" values="226.4;776.6;776.6;226.4" keyTimes="0;0.3;0.9;1" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></rect>
+  <text x="500" y="102" text-anchor="middle" font-size="14" fill="#6b7aa6" letter-spacing="2" font-family="'Courier New',Consolas,Menlo,monospace">SOUMYA RANJAN BARIK · soumyaranjan-dev57</text>
+</svg>

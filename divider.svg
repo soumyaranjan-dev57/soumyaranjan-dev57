@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 28" width="1000" height="28" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset="0.3" stop-color="#00e5ff"/><stop offset="0.7" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="20" y="13" width="960" height="2" rx="1" fill="url(#ln)"/>
+  <path d="M486 14L500 6L514 14L500 22Z" fill="#080c24" stroke="#ff2bd6" stroke-width="1.5"/>
+  <path d="M60 9V19M120 11V17M880 11V17M940 9V19" stroke="#8b5cf6" stroke-opacity="0.7" stroke-width="2"/>
+  <circle cy="14" r="4" fill="#00e5ff" filter="url(#glow)"><animate attributeName="cx" values="120;880;120" dur="5s" repeatCount="indefinite"/></circle>
+</svg>

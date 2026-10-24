@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" role="img" aria-label="Soumya Ranjan Barik. Software Engineer, DevOps and Cloud Learner, AI Explorer.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#080c24"/><stop offset="1" stop-color="#03050f"/></linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="0.55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ff2bd6"/></linearGradient>
+    <radialGradient id="g1" cx="0.12" cy="0.05" r="0.65"><stop offset="0" stop-color="#8b5cf6" stop-opacity="0.38"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="0.92" cy="1" r="0.65"><stop offset="0" stop-color="#00e5ff" stop-opacity="0.22"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#00e5ff" stroke-opacity="0.07" stroke-width="1"/><animateTransform attributeName="patternTransform" type="translate" from="0 0" to="0 40" dur="4s" repeatCount="indefinite"/></pattern>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="330" rx="16" fill="url(#bg)"/>
+  <rect width="1000" height="330" rx="16" fill="url(#grid)"/>
+  <rect width="1000" height="330" rx="16" fill="url(#g1)"/>
+  <rect width="1000" height="330" rx="16" fill="url(#g2)"/>
+  <rect x="0" y="0" width="1000" height="3" fill="#00e5ff" opacity="0.08"><animate attributeName="y" from="0" to="330" dur="5s" repeatCount="indefinite"/></rect>
+  <path d="M0 16A16 16 0 0 1 16 0H984A16 16 0 0 1 1000 16V44H0Z" fill="#0c1230"/>
+  <circle cx="28" cy="22" r="6" fill="#ff2bd6"/><circle cx="50" cy="22" r="6" fill="#8b5cf6"/><circle cx="72" cy="22" r="6" fill="#00e5ff"/>
+  <text x="500" y="27" text-anchor="middle" font-size="14" fill="#7dd3fc" fill-opacity="0.85" font-family="'Courier New',Consolas,Menlo,monospace">soumya@dev-terminal: ~/profile</text>
+  <rect x="0" y="44" width="1000" height="1" fill="url(#neon)" fill-opacity="0.45"/>
+  <text x="40" y="92" font-size="20" fill="#6b7aa6" font-family="'Courier New',Consolas,Menlo,monospace"><tspan fill="#00e5ff">&gt;</tspan> ./whoami</text>
+  <text x="500" y="172" text-anchor="middle" font-size="56" font-weight="700" letter-spacing="3" fill="url(#neon)" filter="url(#glow)" font-family="'Courier New',Consolas,Menlo,monospace">SOUMYA RANJAN BARIK</text>
+  <rect x="250" y="195" width="500" height="2" rx="1" fill="url(#neon)"><animate attributeName="opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite"/></rect>
+  <g opacity="1">
+    <animate attributeName="opacity" calcMode="discrete" values="1;0;0;0" keyTimes="0;0.3333;0.6667;1" dur="12s" repeatCount="indefinite"/>
+    <clipPath id="t0"><rect x="347" y="222" height="45" width="309"><animate attributeName="width" values="0;309;309;0" keyTimes="0;0.1167;0.3333;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <text x="500" y="252" text-anchor="middle" font-size="30" fill="#e6f1ff" clip-path="url(#t0)" font-family="'Courier New',Consolas,Menlo,monospace">Software Engineer</text>
+    <rect x="656" y="226" width="3" height="28" fill="#00e5ff" filter="url(#glow)"><animate attributeName="x" values="347;656;656;347" keyTimes="0;0.1167;0.3333;1" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></rect>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0;0" keyTimes="0;0.3333;0.6667;1" dur="12s" repeatCount="indefinite"/>
+    <clipPath id="t1"><rect x="302" y="222" height="45" width="0"><animate attributeName="width" values="0;0;399;399;0" keyTimes="0;0.3333;0.45;0.6667;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <text x="500" y="252" text-anchor="middle" font-size="30" fill="#e6f1ff" clip-path="url(#t1)" font-family="'Courier New',Consolas,Menlo,monospace">DevOps &amp; Cloud Learner</text>
+    <rect x="302" y="226" width="3" height="28" fill="#00e5ff" filter="url(#glow)"><animate attributeName="x" values="302;302;701;701;302" keyTimes="0;0.3333;0.45;0.6667;1" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></rect>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;0;1;1" keyTimes="0;0.3333;0.6667;1" dur="12s" repeatCount="indefinite"/>
+    <clipPath id="t2"><rect x="401" y="222" height="45" width="0"><animate attributeName="width" values="0;0;201;201" keyTimes="0;0.6667;0.7833;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <text x="500" y="252" text-anchor="middle" font-size="30" fill="#e6f1ff" clip-path="url(#t2)" font-family="'Courier New',Consolas,Menlo,monospace">AI Explorer</text>
+    <rect x="401" y="226" width="3" height="28" fill="#00e5ff" filter="url(#glow)"><animate attributeName="x" values="401;401;602;602" keyTimes="0;0.6667;0.7833;1" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></rect>
+  </g>
+  <path d="M24 274V300H50" fill="none" stroke="#00e5ff" stroke-opacity="0.7" stroke-width="2"/>
+  <path d="M976 274V300H950" fill="none" stroke="#ff2bd6" stroke-opacity="0.7" stroke-width="2"/>
+  <circle cx="44" cy="313" r="5" fill="#00e5ff"><animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <text x="58" y="318" font-size="14" fill="#7dd3fc" font-family="'Courier New',Consolas,Menlo,monospace">ONLINE</text>
+  <text x="500" y="318" text-anchor="middle" font-size="14" fill="#b69cff" letter-spacing="2" font-family="'Courier New',Consolas,Menlo,monospace">LEARN → BUILD → AUTOMATE → GROW</text>
+  <text x="960" y="318" text-anchor="end" font-size="14" fill="#ff7be5" font-family="'Courier New',Consolas,Menlo,monospace">2026</text>
+  <rect x="1" y="1" width="998" height="328" rx="15" fill="none" stroke="url(#neon)" stroke-opacity="0.5" stroke-width="2"/>
+  <rect x="1" y="1" width="998" height="328" rx="15" fill="none" stroke="#00e5ff" stroke-width="3" stroke-linecap="round" stroke-dasharray="150 2600" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="0" to="-2750" dur="7s" repeatCount="indefinite"/></rect>
+</svg>

@@ -41,6 +41,9 @@
 
 <div align="center">
 
+<div align="center">
+<img src="divider.svg" width="100%" alt="">
+</div>
 
 <p align="center">
   <a href="https://soumyaranjan-dev57.github.io/soumyaranjan-dev57/">
@@ -48,10 +51,13 @@
   </a>
   <br>
   <a href="https://soumyaranjan-dev57.github.io/soumyaranjan-dev57/">
-    <strong>▶ PLAY NEON SERPENT</strong>
+  
   </a>
 </p>
 
+<div align="center">
+<img src="divider.svg" width="100%" alt="">
+</div>
 
 <br>
 

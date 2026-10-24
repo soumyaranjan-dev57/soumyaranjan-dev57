@@ -4,9 +4,11 @@
 
 <br>
 
-<a href="https://github.com/soumyaranjan-dev57"><b>[ GITHUB ]</b></a>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/soumyarani-barik-575b65363/"><b>[ LINKEDIN ]</b></a>
+<div align="center">
+  <a href="https://github.com/soumyaranjan-dev57"><b>⚡ [ GITHUB ]</b></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/soumyarani-barik-575b65363/"><b>🌐 [ LINKEDIN ]</b></a>
+</div>
 
 <img src="divider.svg" width="100%" alt="">
 

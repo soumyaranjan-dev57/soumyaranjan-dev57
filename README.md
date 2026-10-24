@@ -4,19 +4,6 @@
 
 <br>
 
-<div align="center">
-
-  <a href="https://github.com/soumyaranjan-dev57">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/soumyarani-barik-575b65363/">
-    <img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile">
-  </a>
-
-</div>
-
-
 
 <img src="divider.svg" width="100%" alt="">
 
@@ -44,15 +31,13 @@
   <img src="projects.svg" width="100%" alt="Projects — Neon portfolio panel">
 </div>
 
-[**→ Open repository**](https://github.com/soumyaranjan-dev57/two-tier-flask-app)
+<div align="center">
+<img src="divider.svg" width="100%" alt="">
+</div>
 
-
-## `04` // CONNECT
-
-Happy to connect about software engineering, DevOps, cloud and AI.
-
-* **GitHub:** [github.com/soumyaranjan-dev57](https://github.com/soumyaranjan-dev57)
-* **LinkedIn:** [Soumya Ranjan Barik](https://www.linkedin.com/in/soumyarani-barik-575b65363/)
+<div align="center">
+  <img src="connect.svg" width="100%" alt="Connect with Soumya Ranjan Barik">
+</div>
 
 <div align="center">
 

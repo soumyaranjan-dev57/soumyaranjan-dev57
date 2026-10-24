@@ -1,0 +1,62 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="350" viewBox="0 0 1000 350">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071426"/>
+      <stop offset="55%" stop-color="#111b3d"/>
+      <stop offset="100%" stop-color="#241044"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#b45cff"/>
+    </linearGradient>
+
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#43d9ff" stroke-opacity=".12"/>
+    </pattern>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="350" rx="16" fill="url(#bg)"/>
+  <rect width="1000" height="350" rx="16" fill="url(#grid)"/>
+
+  <!-- Neon glow -->
+  <circle cx="900" cy="60" r="100" fill="#8b35ff" opacity=".22" filter="url(#glow)"/>
+  <circle cx="100" cy="310" r="100" fill="#00e5ff" opacity=".18" filter="url(#glow)"/>
+
+  <!-- Border -->
+  <rect x="12" y="12" width="976" height="326" rx="12"
+        fill="none" stroke="url(#neon)" stroke-width="1.5"/>
+
+  <!-- Section heading -->
+  <text x="42" y="48" fill="#00f5ff" font-family="monospace"
+        font-size="15" letter-spacing="3">01 // IDENTITY</text>
+  <path d="M42 64H958" stroke="url(#neon)" stroke-width="2"/>
+
+  <!-- Identity details -->
+  <text x="42" y="105" fill="#8da8c9" font-family="monospace" font-size="14">USER</text>
+  <text x="205" y="105" fill="#ffffff" font-family="monospace"
+        font-size="20" font-weight="bold">Soumya Ranjan Barik</text>
+
+  <text x="42" y="147" fill="#8da8c9" font-family="monospace" font-size="14">FOCUS</text>
+  <text x="205" y="147" fill="#67f7ff" font-family="monospace" font-size="17">Software Engineering | DevOps</text>
+  <text x="205" y="172" fill="#67f7ff" font-family="monospace" font-size="17">Cloud | AI</text>
+
+  <text x="42" y="211" fill="#8da8c9" font-family="monospace" font-size="14">STATUS</text>
+  <circle cx="211" cy="206" r="5" fill="#42ff9e"/>
+  <text x="225" y="211" fill="#42ff9e" font-family="monospace" font-size="16">[ONLINE] learning, building</text>
+
+  <text x="42" y="252" fill="#8da8c9" font-family="monospace" font-size="14">MISSION</text>
+  <text x="205" y="252" fill="#ffffff" font-family="monospace" font-size="17">learn → build → automate → grow</text>
+
+  <!-- Footer -->
+  <path d="M42 278H958" stroke="#6f7da6" stroke-opacity=".5"/>
+  <text x="42" y="306" fill="#b9c8e8" font-family="monospace"
+        font-size="13">COMPUTER SCIENCE GRADUATE // LEARNING BY BUILDING</text>
+  <rect x="42" y="320" width="180" height="3" rx="1.5" fill="url(#neon)"/>
+</svg>

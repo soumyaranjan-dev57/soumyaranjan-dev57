@@ -30,26 +30,8 @@
 </div>
 
 
-## `02` // SKILL MATRIX
-
 <div align="center">
-
-<img src="https://img.shields.io/badge/HANDS--ON-42FF9E?style=flat-square" alt="Hands-on practice">
-&nbsp;
-<img src="https://img.shields.io/badge/LEARNING-00F5FF?style=flat-square" alt="Currently learning">
-
-</div>
-
-| AREA | SKILLS |
-|:--|:--|
-| **Programming** | `Python` · `Bash` |
-| **DevOps & Cloud** | `Linux` · `Git` · `Docker` · `Docker Compose` · `Jenkins` |
-| **Cloud & Automation — Learning** | `AWS` · `CI/CD` · `Terraform` · `Kubernetes` |
-| **Development & Databases** | `Flask` · `MySQL` |
-| **AI — Exploring** | `ML Foundations` · `LLMs` · `Generative AI` · `RAG` · `Agentic AI` |
-
-<div align="center">
-  <sub>Hands-on skills have been practised through projects or labs. Learning and exploring topics are not claimed as completed or professional experience.</sub>
+  <img src="skill-matrix.svg" width="100%" alt="Technical Skills — Skill Matrix">
 </div>
 
 

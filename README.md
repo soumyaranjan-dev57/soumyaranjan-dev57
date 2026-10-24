@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/cyberpunk-dashboard.png" alt="Soumya Ranjan Barik — neon cyberpunk developer dashboard" width="100%">
+<img src="cyberpunk-dashboard.png" alt="Soumya Ranjan Barik — neon cyberpunk developer dashboard" width="100%">
 
 <h1>Soumya Ranjan Barik</h1>
 
